@@ -4,30 +4,30 @@ public class Car{
 
         public String brand;
         public String model;
-        public Float minMileage;
+        public int minMileage;
         
         public Car()
         {
          brand="";
          model="";
-         minMilage=0.0f;
+         minMileage=0;
         }
 
 
-        public Car(String brand, String model,Float minMileage)
+        public Car(String brand, String model,int minMileage)
       {
         this.brand=brand;
         this.model=model;
-        this.milage=minMileage;
+        this.minMileage=minMileage;
       }
       public void displayInfo()
        {
-        System.out.println("car brand:"+brand);
-        System.out.println("model:"+model);
-        System.out.println("minMilage:"+minMileage);
+        System.out.println("car brand: "+brand);
+        System.out.println("model: "+model);
+        System.out.println("minMilage: "+minMileage+" km");
        }
        public static void main(String[] args) { 
-        Car car1= new Car("Toyota","Toyota Supra",13.2);
+        Car car1= new Car("Toyota","Toyota Supra",13);
         Car car2= new Car("Tesla", "Tesla Model Y",393); 
         Car car3= new Car("BMW","BMW i3",130);
         System.out.println("Car1 information:");
