@@ -34,6 +34,7 @@ public class Car {
     Car car1 = new Car("Toyota", "Toyota Supra", 13);
     Car car2 = new Car("Tesla", "Tesla Model Y", 393);
     Car car3 = new Car("BMW", "BMW i3", 130);
+    Car car4 = new Car("Audi", "A6 Sedan", 200);
 
     System.out.println("Car1 information:");
     car1.displayInfo();
@@ -49,5 +50,10 @@ public class Car {
     car3.displayInfo();
     int car3Age = car3.calculateCarAge(2015);
     System.out.println("Car age: " + car3Age + " years\n");
+
+    System.out.println("Car4 information:");
+    car4.displayInfo();
+    int car4Age = car4.calculateCarAge(2017);
+    System.out.println("Car age:" + car4Age + " years\n");
   }
 }
